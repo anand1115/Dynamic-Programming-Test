@@ -5,6 +5,7 @@ def solve(m,n):
         return 1
     else:
         return solve(m,n-1)+solve(m-1,n)
+    
 def solve_dynamically(m,n,memo={}):
     key=str(m)+"-"+str(n)
     if(m==0 or n==0):
